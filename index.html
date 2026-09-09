@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Mohamed Fatnassi — Développeur Front-End</title>
+  <meta name="description" content="Mohamed Fatnassi, développeur front-end disponible pour des projets et collaborations. HTML, CSS, JavaScript, Tailwind CSS, sites vitrines et interfaces modernes." data-i18n-content="meta.description" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#" class="nav-logo">MF.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/mohamed-fatnassi-926186426/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Profil LinkedIn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+        </a>
+        <div class="lang-switch" role="group" aria-label="Changer de langue / Switch language">
+          <button type="button" class="lang-btn is-active" data-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span data-i18n="hero.status">Disponible pour des projets &amp; collaborations</span>
+    </div>
+
+    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Développeur Web</p>
+    <h1 class="hero-title">
+      Mohamed<br /><em>Fatnassi</em>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">
+      Je conçois et intègre des interfaces web modernes, des sites vitrines et des solutions e-commerce performantes. Actuellement disponible en freelance pour transformer vos idées en sites web qui vivent réellement dans le navigateur.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="hero-cta" data-i18n="hero.cta1">Voir mes projets ↓</a>
+      <a href="#contact" class="hero-cta hero-cta-ghost" data-i18n="hero.cta2">Discutons de votre projet</a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/mohamed-fatnassi-926186426/" target="_blank" rel="noopener noreferrer" class="quick-btn quick-btn-linkedin">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- About -->
+  <section class="section reveal" id="about">
+    <p class="section-label" data-i18n="about.label">01 — Qui suis-je</p>
+    <h2 class="section-title" data-i18n="about.title">À propos de moi</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="about.p1">
+          Je suis Mohamed Fatnassi, développeur web freelance passionné par la création de sites modernes, d'interfaces interactives et de solutions e-commerce. Mon approche repose sur la maîtrise des langages fondamentaux et des bases de données pour concevoir des plateformes performantes et soignées.
+        </p>
+        <p data-i18n="about.p2">
+          Mon objectif est de continuer à concrétiser des projets ambitieux tout en accompagnant mes clients dans le développement de leur présence en ligne et de leurs boutiques numériques.
+        </p>
+      </div>
+      <div>
+        <p class="meta-label" data-i18n="about.langLabel">Langues</p>
+        <div class="badge-list" style="margin-bottom:1.5rem;">
+          <span class="badge" data-i18n="about.lang.fr">🇫🇷 Français — Courant</span>
+          <span class="badge" data-i18n="about.lang.ar">🇸🇦 Arabe — Courant</span>
+          <span class="badge" data-i18n="about.lang.en">🇬🇧 Anglais — Technique</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Skills -->
+  <section class="section reveal" id="skills">
+    <p class="section-label" data-i18n="skills.label">02 — Ce que je sais faire</p>
+    <h2 class="section-title" data-i18n="skills.title">Compétences</h2>
+
+    <div class="skills-board">
+
+      <div class="skill-row">
+        <div class="skill-row-heading">
+          <span class="skill-row-num">01</span>
+          <span class="skill-row-title" data-i18n="skills.cat.frontend">Frontend</span>
+          <span class="skill-row-line" aria-hidden="true"></span>
+          <span class="skill-row-count">6</span>
+        </div>
+        <div class="skill-pills">
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#e34c26;">5</span>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#2965f1;">3</span>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#f7df1e; color:#1a1a1a;">JS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#38bdf8;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9c1-3 3-4.5 6-4.5 3.5 0 4.5 2.5 5.5 3.5-1-.3-2.2-.1-3 .7-1 1-1.5 2.3-3.5 2.3-2 0-2.7-1.5-5-2z" fill="#ffffff"/>
+                <path d="M1 15c1-3 3-4.5 6-4.5 3.5 0 4.5 2.5 5.5 3.5-1-.3-2.2-.1-3 .7-1 1-1.5 2.3-3.5 2.3-2 0-2.7-1.5-5-2z" fill="#ffffff"/>
+              </svg>
+            </span>
+            <span>Tailwind CSS</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#a855f7;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="3" y="3" width="8" height="8" rx="1.5" fill="#ffffff"/>
+                <rect x="13" y="3" width="8" height="8" rx="1.5" fill="#ffffff"/>
+                <rect x="3" y="13" width="8" height="8" rx="1.5" fill="#ffffff"/>
+                <rect x="13" y="13" width="8" height="8" rx="1.5" fill="#ffffff"/>
+              </svg>
+            </span>
+            <span data-i18n="skills.item.flexgrid">Flexbox &amp; Grid</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#22c55e;">📱</span>
+            <span data-i18n="skills.item.responsive">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-heading">
+          <span class="skill-row-num">02</span>
+          <span class="skill-row-title" data-i18n="skills.cat.backend">Backend</span>
+          <span class="skill-row-line" aria-hidden="true"></span>
+          <span class="skill-row-count">3</span>
+        </div>
+        <div class="skill-pills">
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#777bb4;">P</span>
+            <span>PHP</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#3c873a;">N</span>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-pill">
+            <span class="skill-pill-icon" style="background:#00618a;">M</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Services -->
+  <section class="section reveal" id="services">
+    <p class="section-label" data-i18n="services.label">03 — Ce que je propose</p>
+    <h2 class="section-title" data-i18n="services.title">Services</h2>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3 class="service-name" data-i18n="services.s1.title">Développement Web</h3>
+        <p class="service-desc" data-i18n="services.s1.desc">Intégration front-end sur mesure avec HTML, CSS, Tailwind et JavaScript, pour des interfaces propres, rapides et fidèles à vos maquettes.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <h3 class="service-name" data-i18n="services.s2.title">Sites vitrines</h3>
+        <p class="service-desc" data-i18n="services.s2.desc">Création de sites vitrines modernes et responsives pour présenter votre activité, vos services et convertir vos visiteurs en clients.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3 class="service-name" data-i18n="services.s3.title">Sites e-commerce</h3>
+        <p class="service-desc" data-i18n="services.s3.desc">Mise en place de boutiques en ligne claires et fonctionnelles, pensées pour la navigation produit et une expérience d'achat fluide.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📦</div>
+        <h3 class="service-name" data-i18n="services.s4.title">Sites WordPress</h3>
+        <p class="service-desc" data-i18n="services.s4.desc">Création et personnalisation de sites sous WordPress, adaptés à vos besoins et faciles à faire évoluer par la suite.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <h3 class="service-name" data-i18n="services.s5.title">Correction &amp; maintenance</h3>
+        <p class="service-desc" data-i18n="services.s5.desc">Correction de bugs, mises à jour et maintenance régulière pour garder votre site performant, sécurisé et à jour.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Projects -->
+  <section class="section reveal" id="projects">
+    <p class="section-label" data-i18n="projects.label">04 — Mes réalisations</p>
+    <h2 class="section-title" data-i18n="projects.title">Projets</h2>
+    <div class="projects-grid">
+
+      <!-- BBH ArchStudio -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="project-bbh.jpg" alt="Aperçu du site BBH ArchStudio" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.tag.architecture">Architecture</span>
+          <h3 class="project-name">BBH ArchStudio</h3>
+          <p class="project-desc" data-i18n="projects.bbh.desc">Site vitrine pour un cabinet d'architecture d'intérieur et de rénovation, avec devis rapide et prise de contact WhatsApp.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <a href="https://fatnassim490-svg.github.io/bbh-archstudio/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <!-- Archiwelt -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="project-archiwelt.jpg" alt="Aperçu du site Archiwelt" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.tag.architecture">Architecture</span>
+          <h3 class="project-name">Archiwelt</h3>
+          <p class="project-desc" data-i18n="projects.archiwelt.desc">Site vitrine pour une agence d'architecture couplée à un centre de formation certifiant (Revit, SketchUp, AutoCAD, Photoshop).</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <a href="https://fatnassim490-svg.github.io/archiwelt/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <!-- Legoo Architects -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="project-legoo.jpg" alt="Aperçu du site Legoo Architects" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.tag.architecture">Architecture</span>
+          <h3 class="project-name">Legoo Architects</h3>
+          <p class="project-desc" data-i18n="projects.legoo.desc">Site vitrine haut de gamme pour un cabinet d'architecture basé entre Alger et Paris, axé sur la présentation de réalisations.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <a href="https://fatnassim490-svg.github.io/legooarchitects/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <!-- Bien-Être Aménagement -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="project-bienetre.jpg" alt="Aperçu du site Bien-Être Aménagement" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.tag.interior">Design d'intérieur</span>
+          <h3 class="project-name">Bien-Être Aménagement</h3>
+          <p class="project-desc" data-i18n="projects.bienetre.desc">Vitrine pour un aménageur d'intérieur, articulée autour d'un book de réalisations et d'une prise de rendez-vous simple via WhatsApp.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <a href="https://fatnassim490-svg.github.io/bien-etre-amenagement/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <!-- Utopia Dental -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="project-utopia.png" alt="Aperçu du site Utopia Dental" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.tag.medical">Médical</span>
+          <h3 class="project-name">Utopia Dental</h3>
+          <p class="project-desc" data-i18n="projects.utopia.desc">Site pour un cabinet dentaire, avec présentation des soins, de l'équipe et un accès direct à la prise de rendez-vous.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <a href="https://fatnassim490-svg.github.io/utopia-dental/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <!-- L'Assiette Algéroise -->
+      <div class="project-card">
+        <div class="project-thumb">
+          <img src="project-assiette.jpg" alt="Aperçu du site L'Assiette Algéroise" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag" data-i18n="projects.tag.restaurant">Restauration</span>
+          <h3 class="project-name">L'Assiette Algéroise</h3>
+          <p class="project-desc" data-i18n="projects.assiette.desc">Site vitrine pour un restaurant familial, avec présentation du menu, galerie et informations pratiques (horaires, budget).</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <a href="https://fatnassim490-svg.github.io/lassiette-algeroise/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.link">Voir le projet →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Contact -->
+  <section class="section reveal" id="contact">
+    <p class="section-label" data-i18n="contact.label">05 — Discutons de votre projet</p>
+    <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+
+    <div class="contact-grid">
+
+      <!-- Formulaire (compatible Formspree) -->
+      <div class="contact-form-wrap">
+        <!-- Formulaire connecté à Formspree -->
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xeaqleqr" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-i18n="form.name.label">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" data-i18n-placeholder="form.name.placeholder" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form.email.label">Email</label>
+              <input type="email" id="email" name="email" placeholder="vous@exemple.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" data-i18n="form.phone.label">Numéro de téléphone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="service" data-i18n="form.service.label">Service souhaité</label>
+              <select id="service" name="service">
+                <option value="" selected data-i18n="form.service.opt0">Choisissez un service (optionnel)</option>
+                <option value="Développement Web" data-i18n="form.service.opt1">Développement Web</option>
+                <option value="Site vitrine" data-i18n="form.service.opt2">Site vitrine</option>
+                <option value="Site e-commerce" data-i18n="form.service.opt3">Site e-commerce</option>
+                <option value="Site WordPress" data-i18n="form.service.opt4">Site WordPress</option>
+                <option value="Correction & maintenance" data-i18n="form.service.opt5">Correction &amp; maintenance</option>
+                <option value="Autre" data-i18n="form.service.opt6">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form.message.label">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." data-i18n-placeholder="form.message.placeholder"></textarea>
+          </div>
+          <button type="submit" class="contact-btn contact-btn-submit" data-i18n="form.submit">Envoyer le message →</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- Coordonnées directes -->
+      <div class="contact-info">
+        <h3 data-i18n="contact.info.title">Coordonnées directes</h3>
+        <p class="contact-info-sub" data-i18n="contact.info.sub">Retrouvez-moi sur mon profil professionnel ou contactez-moi directement :</p>
+
+        <div class="contact-quicklinks">
+          <a href="https://www.linkedin.com/in/mohamed-fatnassi-926186426/" target="_blank" rel="noopener noreferrer" class="quick-btn quick-btn-linkedin">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <a href="mailto:fatnassim490@gmail.com" class="contact-info-item">
+          <span class="contact-info-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M3.5 6L12 12.5L20.5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>fatnassim490@gmail.com</span>
+        </a>
+
+        <a href="https://www.instagram.com/mohamed.dev.dz/?hl=fr" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+          <span class="contact-info-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.3" cy="6.7" r="1.15" fill="currentColor"/>
+            </svg>
+          </span>
+          <span>@mohamed.dev.dz</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer data-i18n="footer.text">
+    &copy; 2026 Mohamed Fatnassi — Tous droits réservés.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
